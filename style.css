@@ -7,7 +7,7 @@
 body{
     background-color: #f4f5e8;
 }
-                                                       /* MENU DESPLEGABLE Y LOGO */                                           
+                                                     /* MENU DESPLEGABLE Y LOGO */                                           
 .logo{
     display: flex;
     width: 300px;
@@ -234,14 +234,6 @@ nav{
 .menu-icon:hover{
     opacity: 1;
 }
-
-.text{
-    color: rgba(90, 88, 88, 0.815);
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-size: 10px; 
-}
                                                        /* TALLERES Y CURSOS */
 .imagen6 {
     width: 220px;
@@ -263,14 +255,15 @@ nav{
 }
 
 .imagen9 {
-    width: 350px;
+    width: 320px;
     margin: auto;
     border-radius: 10px;
 }
 
 .imagen10{
-    width: 350px;
+    width: 320px;
     margin: auto;
+    margin-top: 35px;
     border-radius: 10px;
 }
                                                        /* SOBRE MI */
