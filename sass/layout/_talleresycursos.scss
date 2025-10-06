@@ -1,0 +1,27 @@
+@use "../utilidades/variable" as *;
+@use "../utilidades/mixin" as *;
+@use "../utilidades/mediaqueries" as*;
+
+/* TALLERES Y CURSOS */
+.imagen6, .imagen7, .imagen8, .imagen9, .imagen10{
+    width: 60%;
+    max-width: $font-4;
+    height: auto;
+    margin: 15px auto;
+    border-radius: $borde-radius;
+}
+
+.imagen8{
+    width: 68%;
+    margin-top: 50px;
+}
+
+.imagen9{
+    margin-top: 0px;
+    width: 90%;
+}
+
+.imagen10{
+    width: 90%;
+    margin-top: 30px;
+}

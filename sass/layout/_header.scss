@@ -1,0 +1,89 @@
+@use "../utilidades/variable" as *;
+@use "../utilidades/mixin" as *;
+@use "../utilidades/mediaqueries" as*;
+
+/* LOGO Y MENU DESPLEGABLE */                                        
+.logo{
+  display: flex;
+  width: $font-0;
+  margin: auto;
+}
+
+nav {
+  max-width: 1100px;
+  margin: auto;
+  background-color: $color-menu;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'cinzel';
+}
+
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.menu-horizontal > li {
+  position: relative; 
+}
+
+.menu-horizontal > li > a {
+  display: block;
+  padding: 15px 20px;
+  color: $color-fondo;
+  text-decoration: none;
+}
+
+.menu-horizontal > li:hover {
+  background-color: $color-menu2;
+}
+
+.menu-vertical {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 360px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: $color-menu3;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+  display: block;
+}
+
+.menu-vertical li:hover {
+  background-color: $color-menu4;
+}
+
+.menu-vertical a {
+  display: block;
+  color: $color-fondo;
+  padding: 15px 15px 15px 20px;
+  text-decoration: none;
+}
+
+/* INICIO */
+.titulo{
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: 700;
+    color: $color-titulo;
+    text-shadow: 2px 2px 5px #57524d;
+    background-color: $color-fondotitulo;
+    text-align: center;
+    font-family: 'cinzel';
+
+    & ~ .subtitulo {
+      margin-top: 5px;
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      color: $color-subtitulo;
+      text-align: center;
+      text-shadow: 2px 2px 8px #080400cb;
+      font-family: 'Cinzel';
+  }
+}

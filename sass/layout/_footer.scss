@@ -1,0 +1,65 @@
+@use "../utilidades/variable" as *;
+@use "../utilidades/mixin" as *;
+@use "../utilidades/mediaqueries" as*;
+
+/* PIE DE PÁGINA */
+.footer {
+  position: relative;
+  width: 100%;
+  color: $color-derechos;
+  min-height: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px;
+    flex-wrap: wrap;  
+  }
+
+  .icon-elem {
+    list-style: none;
+  }
+
+  .icon {
+    color: $color-iconos;
+    font-size: 25px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.4s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+
+.menu-icon {
+  color: $color-menuiconos;
+  font-size: 16px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px 8px;
+  opacity: 0.75;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+}

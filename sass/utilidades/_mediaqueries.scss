@@ -1,0 +1,436 @@
+@use "../utilidades/variable" as *;
+
+/* MEDIA QUERIES */
+/* Mobile */
+//Menú
+@media (max-width: 768px) {
+  .menu-horizontal {
+    flex-direction: column;
+  }
+
+  .menu-horizontal > li:hover .menu-vertical {
+    display: none;
+  }
+
+  .menu-vertical {
+    position: static;
+    width: 100%;
+  }
+}
+
+/* DESKTOP */
+/* Header */
+@media (min-width: 1200px) {
+  .titulo {
+    margin-top: 25px;
+    font-size: 55px;
+    text-shadow: 2px 2px 5px #57524d;
+    
+    & ~ .subtitulo {
+      margin-top: 10px;
+      margin-bottom: 40px;
+      font-size: 25px;
+      text-shadow: 2px 2px 8px #080400cb;
+    }
+  }
+}
+
+/* Formaciones */
+@media (min-width: 1200px) {
+  .contenedor-anual1 {
+    padding: 60px;
+    grid-template-columns: 415px 415px 415px;
+    grid-template-rows: 550px;
+    gap: 40px;
+  }
+  
+  .contenedor-anual2 {
+    padding: 20px;
+    grid-template-columns: 410px 410px;
+    grid-template-rows: 550px;
+    gap: 35px;
+  }
+
+  .formacion-anual {
+    padding: $padding-card;
+  }
+}
+
+@media (min-width: 1200px) {
+  .imagen1 {
+    width: $font-0;
+  }
+  
+  .imagen2,
+  .imagen4 {
+    width: $font-5;
+  }
+
+  .imagen3 {
+    width: $font-5;
+    margin-top: 30px;
+    margin-left: 12px;
+  }
+
+  .imagen5 {
+    width: $font-5;
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+}
+
+/* Talleres y cursos */
+@media (min-width: 1200px) {
+    .imagen6 {
+        width: $font-1;
+    }
+
+    .imagen7 {
+        width: $font-1;
+    }
+
+    .imagen8 {
+        width: $font-2;
+        margin-left: 40px;
+    }
+
+    .imagen9 {
+        width: $font-4;
+    }
+
+    .imagen10 {
+        width: $font-4;
+    }
+}
+
+/* Sobre mi */
+@media (min-width: 1000px) {
+    .contenedor-sobremi {
+        display: grid; 
+        grid-template-columns: 1000px;
+        grid-template-rows: 550px;
+        padding: 20px;
+        gap: 35px;
+    }
+
+    .sobremi {
+        text-align: left;
+    }
+
+    .card-sobremi {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .foto-sobremi1 {
+        width: 250px;
+        margin: 25px;
+    }
+
+    .foto-sobremi2 {
+        width: 200px;
+        height: 200px;
+        margin: 25px;
+        margin-top: 100px;
+    }
+
+    .texto {
+        font-size: 22px;
+        text-align: center;
+        line-height: 2.2;
+        margin-top: 100px;
+    }
+}
+
+/* Whatsapp */
+@media (min-width: 1200px) {
+    .contenedor-wspp1 {
+        grid-template-columns: 1200px; 
+        grid-template-rows: 600px; 
+    }
+
+    .img-wspp {
+        width: 280px;
+        height: 300px;
+        border-radius: 200px;
+    }
+
+    h5 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Instagram */
+@media (min-width: 1000px) {
+    .contenedor-insta1 {
+        grid-template-columns: 1000px; 
+        grid-template-rows: 730px; 
+    }
+
+    .contenedor-insta2 {
+        padding: 40px;
+    }
+
+    .video {
+        width: 300px;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .seguir {
+        margin: 0px 350px;
+    }
+}
+
+/* Footer */
+@media (min-width: 1024px) {
+  .footer {
+    padding: 20px 80px;
+  }
+
+  .social-icon {
+    margin: 15px 0px;
+  }
+  
+  .icon {
+    font-size: 30px;
+    margin: 0 15px;
+  }
+
+  .menu {
+    margin: 15px 0px;
+  }
+
+  .menu-icon {
+    font-size: 18px;
+    margin: 5px 12px;
+  }
+}
+
+/* TABLET */                            
+/* Header */
+@media (min-width: 768px) {
+  .titulo {
+    margin-top: 20px;
+    font-size: 45px;
+    text-shadow: 2px 2px 4px #57524d;
+    
+    & ~ .subtitulo {
+      margin-top: 8px;
+      margin-bottom: 30px;
+      font-size: 22px;
+      text-shadow: 2px 2px 6px #080400cb;
+    }
+  }
+}
+
+/* Formaciones */
+@media (min-width: 768px) {
+  .contenedor-anual1 {
+    gap: 30px;
+    padding: 40px;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto; 
+    display: grid;
+  }
+  
+  .contenedor-anual2 {
+    gap: 30px;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto;
+    display: grid;
+  }
+
+  .formacion-anual {
+    width: auto; 
+  }
+  
+  .card-formaciones {
+    .formaciones-titulo {
+      font-size: 22px;
+    }
+    
+    .descripcion-formacion {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .imagen1 {
+    width: $font-0;
+    margin: auto;
+  }
+  
+  .imagen2,
+  .imagen4 {
+    width: $font-5;
+    margin: auto;
+  }
+  
+  .imagen3 {
+    width: $font-5;
+    margin-top: 30px;
+    margin-left: 12px;
+  }
+
+  .imagen5 {
+    width: $font-5;
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+}
+
+/* Talleres y cursos */
+@media (min-width: 768px) {
+    .imagen6 {
+        width: $font-1;
+        margin: auto;
+    }
+
+    .imagen7 {
+        width: $font-1;
+        margin: auto;
+    }
+
+    .imagen8 {
+        width: $font-2;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .imagen9 {
+        width: $font-4;
+        margin: auto;
+    }
+
+    .imagen10 {
+        width: $font-4;
+        margin: auto;
+        margin-top: 35px;
+    }
+}
+
+/* Sobre mi */
+@media (min-width: 768px) {
+    .contenedor-sobremi {
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .sobremi {
+        text-align: left; 
+        padding: 20px;
+    }
+
+    .card-sobremi {
+        flex-direction: row; 
+        align-items: flex-start; 
+        text-align: left;
+        gap: 20px; 
+    }
+
+    .foto-sobremi1 {
+        width: 250px;
+        margin: 20px 0;
+    }
+    
+    .foto-sobremi2 {
+        width: 200px;
+        height: 200px;
+        margin: 20px 0;
+        margin-top: 50px;
+    }
+    
+    .texto {
+        font-size: 20px;
+        text-align: left;
+        line-height: 2;
+        margin-top: 50px;
+    }
+}
+
+/* Whatsapp */
+@media (min-width: 768px) {
+    .subtitulo-wspp {
+        position: relative;
+        top: -45px;
+        font-size: 28px;
+        text-shadow: 2px 2px 8px #1f1001f6;
+        margin-bottom: 0;
+    }
+    
+    .contenedor-wspp1 {
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 800px; 
+        grid-template-rows: 600px; 
+    }
+    
+    .contenedor-wspp2 {
+        padding: 20px;
+        border-radius: 30px;
+        max-width: none;
+    }
+
+    .img-wspp {
+        width: 200px;
+        height: 220px;
+        margin-bottom: 20px;
+        border-radius: 150px;
+    }
+
+    h5 {
+        font-size: 22px;
+    }
+
+    .ver-canal {
+        max-width: 300px;
+    }
+}
+
+/* Instagram */
+@media (min-width: 600px) {
+    .contenedor-insta1 {
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 600px; 
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+
+    .contenedor-insta2 {
+        padding: 30px;
+    }
+}
+
+/* Footer */
+@media (min-width: 768px) {
+  .footer {
+    padding: 0px 50px;
+
+    .icon {
+      font-size: 30px;
+      margin: 10px 20px;
+
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
+  }
+
+  .menu {
+    margin: 0px 0px;
+  }
+
+  .menu-icon {
+    font-size: 20px;
+    margin: 5px 10px;
+  }
+}

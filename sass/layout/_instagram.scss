@@ -1,0 +1,49 @@
+@use "../utilidades/variable" as *;
+@use "../utilidades/mixin" as *;
+@use "../utilidades/mediaqueries" as*;
+
+/* INSTAGRAM */
+.contenedor-insta1{
+    background-color: $color-contenedor1;
+    padding: 20px;
+    display: block;
+
+    .contenedor-insta2{
+        background-color: $color-contenedor3;
+        padding: 20px;
+        text-align: center;
+        border-radius: $border-radius-card;
+    }
+
+    .card-insta{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+.video{
+    border-radius: $border-radius-video;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+h4{
+    font-size: 18px;
+    font-weight: 800;
+    color: $color-titulo;
+    text-align: center;
+    font-family: 'Monaco';  
+    margin-bottom: 10px;
+}
+
+.seguir {
+    @include boton-base;
+    background-color: $color-button-seguir;
+    margin: auto;
+    width: 20%;
+}

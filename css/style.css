@@ -1,0 +1,786 @@
+@charset "UTF-8";
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f5e8;
+}
+
+/* MEDIA QUERIES */
+/* Mobile */
+@media (max-width: 768px) {
+  .menu-horizontal {
+    flex-direction: column;
+  }
+  .menu-horizontal > li:hover .menu-vertical {
+    display: none;
+  }
+  .menu-vertical {
+    position: static;
+    width: 100%;
+  }
+}
+/* DESKTOP */
+/* Header */
+@media (min-width: 1200px) {
+  .titulo {
+    margin-top: 25px;
+    font-size: 55px;
+    text-shadow: 2px 2px 5px #57524d;
+  }
+  .titulo ~ .subtitulo {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    text-shadow: 2px 2px 8px rgba(8, 4, 0, 0.7960784314);
+  }
+}
+/* Formaciones */
+@media (min-width: 1200px) {
+  .contenedor-anual1 {
+    padding: 60px;
+    grid-template-columns: 415px 415px 415px;
+    grid-template-rows: 550px;
+    gap: 40px;
+  }
+  .contenedor-anual2 {
+    padding: 20px;
+    grid-template-columns: 410px 410px;
+    grid-template-rows: 550px;
+    gap: 35px;
+  }
+  .formacion-anual {
+    padding: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .imagen1 {
+    width: 200px;
+  }
+  .imagen2,
+  .imagen4 {
+    width: 330px;
+  }
+  .imagen3 {
+    width: 330px;
+    margin-top: 30px;
+    margin-left: 12px;
+  }
+  .imagen5 {
+    width: 330px;
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+}
+/* Talleres y cursos */
+@media (min-width: 1200px) {
+  .imagen6 {
+    width: 220px;
+  }
+  .imagen7 {
+    width: 220px;
+  }
+  .imagen8 {
+    width: 250px;
+    margin-left: 40px;
+  }
+  .imagen9 {
+    width: 320px;
+  }
+  .imagen10 {
+    width: 320px;
+  }
+}
+/* Sobre mi */
+@media (min-width: 1000px) {
+  .contenedor-sobremi {
+    display: grid;
+    grid-template-columns: 1000px;
+    grid-template-rows: 550px;
+    padding: 20px;
+    gap: 35px;
+  }
+  .sobremi {
+    text-align: left;
+  }
+  .card-sobremi {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .foto-sobremi1 {
+    width: 250px;
+    margin: 25px;
+  }
+  .foto-sobremi2 {
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+    margin-top: 100px;
+  }
+  .texto {
+    font-size: 22px;
+    text-align: center;
+    line-height: 2.2;
+    margin-top: 100px;
+  }
+}
+/* Whatsapp */
+@media (min-width: 1200px) {
+  .contenedor-wspp1 {
+    grid-template-columns: 1200px;
+    grid-template-rows: 600px;
+  }
+  .img-wspp {
+    width: 280px;
+    height: 300px;
+    border-radius: 200px;
+  }
+  h5 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+}
+/* Instagram */
+@media (min-width: 1000px) {
+  .contenedor-insta1 {
+    grid-template-columns: 1000px;
+    grid-template-rows: 730px;
+  }
+  .contenedor-insta2 {
+    padding: 40px;
+  }
+  .video {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .seguir {
+    margin: 0px 350px;
+  }
+}
+/* Footer */
+@media (min-width: 1024px) {
+  .footer {
+    padding: 20px 80px;
+  }
+  .social-icon {
+    margin: 15px 0px;
+  }
+  .icon {
+    font-size: 30px;
+    margin: 0 15px;
+  }
+  .menu {
+    margin: 15px 0px;
+  }
+  .menu-icon {
+    font-size: 18px;
+    margin: 5px 12px;
+  }
+}
+/* TABLET */
+/* Header */
+@media (min-width: 768px) {
+  .titulo {
+    margin-top: 20px;
+    font-size: 45px;
+    text-shadow: 2px 2px 4px #57524d;
+  }
+  .titulo ~ .subtitulo {
+    margin-top: 8px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    text-shadow: 2px 2px 6px rgba(8, 4, 0, 0.7960784314);
+  }
+}
+/* Formaciones */
+@media (min-width: 768px) {
+  .contenedor-anual1 {
+    gap: 30px;
+    padding: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    display: grid;
+  }
+  .contenedor-anual2 {
+    gap: 30px;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    display: grid;
+  }
+  .formacion-anual {
+    width: auto;
+  }
+  .card-formaciones .formaciones-titulo {
+    font-size: 22px;
+  }
+  .card-formaciones .descripcion-formacion {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .imagen1 {
+    width: 200px;
+    margin: auto;
+  }
+  .imagen2,
+  .imagen4 {
+    width: 330px;
+    margin: auto;
+  }
+  .imagen3 {
+    width: 330px;
+    margin-top: 30px;
+    margin-left: 12px;
+  }
+  .imagen5 {
+    width: 330px;
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+}
+/* Talleres y cursos */
+@media (min-width: 768px) {
+  .imagen6 {
+    width: 220px;
+    margin: auto;
+  }
+  .imagen7 {
+    width: 220px;
+    margin: auto;
+  }
+  .imagen8 {
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .imagen9 {
+    width: 320px;
+    margin: auto;
+  }
+  .imagen10 {
+    width: 320px;
+    margin: auto;
+    margin-top: 35px;
+  }
+}
+/* Sobre mi */
+@media (min-width: 768px) {
+  .contenedor-sobremi {
+    padding: 30px;
+    gap: 30px;
+  }
+  .sobremi {
+    text-align: left;
+    padding: 20px;
+  }
+  .card-sobremi {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+  }
+  .foto-sobremi1 {
+    width: 250px;
+    margin: 20px 0;
+  }
+  .foto-sobremi2 {
+    width: 200px;
+    height: 200px;
+    margin: 20px 0;
+    margin-top: 50px;
+  }
+  .texto {
+    font-size: 20px;
+    text-align: left;
+    line-height: 2;
+    margin-top: 50px;
+  }
+}
+/* Whatsapp */
+@media (min-width: 768px) {
+  .subtitulo-wspp {
+    position: relative;
+    top: -45px;
+    font-size: 28px;
+    text-shadow: 2px 2px 8px rgba(31, 16, 1, 0.9647058824);
+    margin-bottom: 0;
+  }
+  .contenedor-wspp1 {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 800px;
+    grid-template-rows: 600px;
+  }
+  .contenedor-wspp2 {
+    padding: 20px;
+    border-radius: 30px;
+    max-width: none;
+  }
+  .img-wspp {
+    width: 200px;
+    height: 220px;
+    margin-bottom: 20px;
+    border-radius: 150px;
+  }
+  h5 {
+    font-size: 22px;
+  }
+  .ver-canal {
+    max-width: 300px;
+  }
+}
+/* Instagram */
+@media (min-width: 600px) {
+  .contenedor-insta1 {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-rows: auto;
+    justify-content: center;
+  }
+  .contenedor-insta2 {
+    padding: 30px;
+  }
+}
+/* Footer */
+@media (min-width: 768px) {
+  .footer {
+    padding: 0px 50px;
+  }
+  .footer .icon {
+    font-size: 30px;
+    margin: 10px 20px;
+  }
+  .footer .icon:hover {
+    transform: translateY(-10px);
+  }
+  .menu {
+    margin: 0px 0px;
+  }
+  .menu-icon {
+    font-size: 20px;
+    margin: 5px 10px;
+  }
+}
+/* LOGO Y MENU DESPLEGABLE */
+.logo {
+  display: flex;
+  width: 200px;
+  margin: auto;
+}
+
+nav {
+  max-width: 1100px;
+  margin: auto;
+  background-color: rgba(48, 29, 2, 0.6588235294);
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "cinzel";
+}
+
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.menu-horizontal > li {
+  position: relative;
+}
+
+.menu-horizontal > li > a {
+  display: block;
+  padding: 15px 20px;
+  color: #f4f5e8;
+  text-decoration: none;
+}
+
+.menu-horizontal > li:hover {
+  background-color: rgba(59, 40, 23, 0.9803921569);
+}
+
+.menu-vertical {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 360px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #52351d;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+  display: block;
+}
+
+.menu-vertical li:hover {
+  background-color: rgba(0, 0, 0, 0.4196078431);
+}
+
+.menu-vertical a {
+  display: block;
+  color: #f4f5e8;
+  padding: 15px 15px 15px 20px;
+  text-decoration: none;
+}
+
+/* INICIO */
+.titulo {
+  margin-top: 15px;
+  font-size: 35px;
+  font-weight: 700;
+  color: rgba(53, 31, 5, 0.8156862745);
+  text-shadow: 2px 2px 5px #57524d;
+  background-color: #e4dec9;
+  text-align: center;
+  font-family: "cinzel";
+}
+.titulo ~ .subtitulo {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #b99908;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(8, 4, 0, 0.7960784314);
+  font-family: "Cinzel";
+}
+
+/* FORMACIONES */
+.contenedor-anual1 {
+  background-color: #dfdbcc;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 415px 415px 415px;
+  grid-template-rows: 550px;
+  gap: 40px;
+  justify-content: center;
+}
+
+.contenedor-anual2 {
+  background-color: #dfdbcc;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 410px 410px;
+  grid-template-rows: 550px;
+  gap: 35px;
+  justify-content: center;
+}
+
+.formacion-anual {
+  background-color: rgba(71, 36, 4, 0.2862745098);
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+  width: 100%;
+}
+
+.card-formaciones {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+.card-formaciones .formaciones-titulo {
+  display: flex;
+  font-size: 20px;
+  color: #352701;
+  justify-content: center;
+  font-family: "Papyrus";
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.card-formaciones .descripcion-formacion {
+  font-family: "delius";
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 1.5;
+  color: #140c01;
+  text-shadow: 2px 2px 5px rgba(66, 66, 65, 0.6705882353);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.imagen1 {
+  width: 200px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.imagen2,
+.imagen4 {
+  width: 330px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.imagen3 {
+  width: 330px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 12px;
+}
+
+.imagen5 {
+  width: 330px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 5px;
+}
+
+/* TALLERES Y CURSOS */
+.imagen6, .imagen7, .imagen8, .imagen9, .imagen10 {
+  width: 60%;
+  max-width: 320px;
+  height: auto;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+.imagen8 {
+  width: 68%;
+  margin-top: 50px;
+}
+
+.imagen9 {
+  margin-top: 0px;
+  width: 90%;
+}
+
+.imagen10 {
+  width: 90%;
+  margin-top: 30px;
+}
+
+/* SOBRE MI */
+.contenedor-sobremi {
+  background-color: #dfdbcc;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-sobremi .sobremi {
+  background-color: rgba(250, 250, 250, 0.6588235294);
+  text-align: left;
+  border-radius: 15px;
+  padding: 15px;
+}
+.contenedor-sobremi .card-sobremi {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.contenedor-sobremi .foto-sobremi1 {
+  width: 200px;
+  margin: 15px;
+  border-radius: 15px;
+}
+.contenedor-sobremi .foto-sobremi2 {
+  width: 200px;
+  height: 150px;
+  margin: 15px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.contenedor-sobremi .texto {
+  color: rgba(15, 13, 0, 0.7333333333);
+  font-family: "Papyrus";
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+/* CANAL DE WHATSAPP */
+.subtitulo-wspp {
+  position: static;
+  top: auto;
+  font-size: 24px;
+  font-weight: 500;
+  color: #b99908;
+  text-align: center;
+  text-shadow: 1px 1px 4px rgba(31, 16, 1, 0.9647058824);
+  font-family: "Cinzel";
+}
+
+.contenedor-wspp1 {
+  background-color: #dfdbcc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.contenedor-wspp1 .contenedor-wspp2 {
+  background-color: rgba(250, 250, 250, 0.6588235294);
+  padding: 15px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.img-wspp {
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #545454;
+  text-align: center;
+  font-family: "monospace";
+  margin-bottom: 10px;
+}
+
+.ver-canal {
+  border: none;
+  text-decoration: none;
+  color: #fafaf8;
+  padding: 15px 35px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition-duration: 0.5s;
+  background-color: #227c69;
+  width: 20%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.unirme:hover {
+  background-color: #0d5539;
+}
+
+/* INSTAGRAM */
+.contenedor-insta1 {
+  background-color: #dfdbcc;
+  padding: 20px;
+  display: block;
+}
+.contenedor-insta1 .contenedor-insta2 {
+  background-color: rgba(71, 36, 4, 0.1647058824);
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+.contenedor-insta1 .card-insta {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+
+.video {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: rgba(53, 31, 5, 0.8156862745);
+  text-align: center;
+  font-family: "Monaco";
+  margin-bottom: 10px;
+}
+
+.seguir {
+  border: none;
+  text-decoration: none;
+  color: white;
+  padding: 15px 35px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition-duration: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  background-color: rgba(74, 96, 216, 0.9725490196);
+  margin: auto;
+  width: 20%;
+}
+
+/* PIE DE PÁGINA */
+.footer {
+  position: relative;
+  width: 100%;
+  color: #70706f;
+  min-height: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer .social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+.footer .icon-elem {
+  list-style: none;
+}
+.footer .icon {
+  color: #613216;
+  font-size: 25px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.4s;
+}
+.footer .icon:hover {
+  transform: translateY(-5px);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+
+.menu-icon {
+  color: #3f1a04;
+  font-size: 16px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px 8px;
+  opacity: 0.75;
+  transition: 0.3s;
+}
+.menu-icon:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

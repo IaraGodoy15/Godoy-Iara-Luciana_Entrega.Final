@@ -1,0 +1,52 @@
+@use "../utilidades/variable" as *;
+@use "../utilidades/mixin" as *;
+@use "../utilidades/mediaqueries" as*;
+
+/* SOBRE MI */
+.contenedor-sobremi{
+    background-color: $color-contenedor1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    .sobremi{
+        background-color: $color-contenedor2;
+        text-align: left;
+        border-radius: $border-radius-base;
+        padding: 15px;
+    }
+
+    .card-sobremi{
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    .foto-sobremi1{
+        width: 200px;
+        margin: 15px;
+        border-radius: $border-radius-base;
+    }
+
+    .foto-sobremi2{
+        width: $font-0;
+        height: 150px;
+        margin: 15px;
+        border-radius: $border-radius-base; 
+        margin-top: 20px;
+    }
+
+    .texto{
+        color: #0f0d00bb;
+        font-family: 'Papyrus';
+        font-style: italic;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.8;
+        margin-top: 20px;
+    }
+}

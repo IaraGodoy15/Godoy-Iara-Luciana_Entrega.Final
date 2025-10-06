@@ -1,0 +1,87 @@
+@use "../utilidades/variable" as *;
+@use "../utilidades/mixin" as *;
+@use "../utilidades/mediaqueries" as*;
+
+/* FORMACIONES */
+.contenedor-anual1{
+    background-color: $color-contenedor1;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 415px 415px 415px;
+    grid-template-rows: 550px;
+    gap: 40px;
+    justify-content: center;
+}
+
+.contenedor-anual2{
+    background-color: $color-contenedor1;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 410px 410px;
+    grid-template-rows: 550px;
+    gap: 35px;
+    justify-content: center;
+}
+
+.formacion-anual{
+    background-color: $color-formacion-anual;
+    padding: $padding-card;
+    text-align: center;
+    border-radius: $border-radius-card;
+    width: 100%;
+}
+
+.card-formaciones{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+
+    .formaciones-titulo{
+        display: flex;
+        font-size: 20px;
+        color: $color-formacion-titulo;
+        justify-content: center;
+        font-family: 'Papyrus';
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .descripcion-formacion{
+        font-family: 'delius';
+        font-size: 15px;
+        font-weight: 200;
+        line-height: 1.5;
+        color: $color-descripcion-formacion;
+        text-shadow: 2px 2px 5px #424241ab;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+.imagen1 {
+  width: $font-0;
+  border-radius: $border-radius-imagen;
+  margin: auto;
+}
+
+.imagen2,
+.imagen4 {
+  width: $font-5;
+  border-radius: $border-radius-imagen;
+  margin: auto;
+}
+
+.imagen3 {
+  width: $font-5;
+  border-radius: $border-radius-imagen;
+  margin-top: 30px;
+  margin-left: 12px;
+}
+
+.imagen5 {
+  width: $font-5;
+  border-radius: $border-radius-imagen;
+  margin-top: 30px;
+  margin-left: 5px;
+}

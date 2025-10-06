@@ -1,0 +1,59 @@
+@use "../utilidades/variable" as *;
+@use "../utilidades/mixin" as *;
+@use "../utilidades/mediaqueries" as*;
+
+/* CANAL DE WHATSAPP */
+.subtitulo-wspp{
+    position: static;
+    top: auto;
+    font-size: 24px;
+    font-weight: 500;
+    color: $color-subtitulo;
+    text-align: center;
+    text-shadow: 1px 1px 4px #1f1001f6;
+    font-family: 'Cinzel';
+}
+
+.contenedor-wspp1{
+    background-color: $color-contenedor1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    .contenedor-wspp2{
+        background-color: #fafafaa8;
+        padding: 15px;
+        text-align: center;
+        border-radius: $padding-card;
+    }
+}
+
+.img-wspp{
+    border-radius: 100px;
+    width: $font-0;
+    height: $font-0;
+    margin-bottom: 15px;
+}
+
+h5{
+    font-size: 20px;
+    font-weight: 300;
+    color: $color-h5;
+    text-align: center;
+    font-family: 'monospace';  
+    margin-bottom: 10px;
+}
+
+.ver-canal {
+    @include estilos-boton;
+    background-color: $color-button-canal1;
+    width: 20%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.unirme:hover {
+        background-color: $color-button-canal2;
+}

@@ -1,0 +1,16 @@
+//BASE
+@use "base/reset" as *;
+
+//UTILIDADES
+@use "utilidades/mixin" as*;
+@use "utilidades/variable" as *;
+@use "utilidades/mediaqueries" as*;
+
+//LAYOUT
+@use "layout/header" as *;
+@use "layout/formaciones" as *;
+@use "layout/talleresycursos" as *;
+@use "layout/sobremi" as *;
+@use "layout/canalwspp" as *;
+@use "layout/instagram" as *;
+@use "layout/footer" as *;
