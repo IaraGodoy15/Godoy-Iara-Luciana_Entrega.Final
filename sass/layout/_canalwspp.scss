@@ -37,7 +37,7 @@
     margin-bottom: 15px;
 }
 
-h5{
+h4{
     font-size: 20px;
     font-weight: 300;
     color: $color-h5;
@@ -49,7 +49,7 @@ h5{
 .ver-canal {
     @include estilos-boton;
     background-color: $color-button-canal1;
-    width: 20%;
+    width: 50%;
     max-width: 250px;
     margin: 0 auto;
 }

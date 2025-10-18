@@ -14,39 +14,38 @@
 
     .sobremi{
         background-color: $color-contenedor2;
-        text-align: left;
         border-radius: $border-radius-base;
         padding: 15px;
     }
 
     .card-sobremi{
         display: flex;
+        flex-direction: column;
         text-align: center;
         align-items: center;
+        width: 100%;
     }
 
-    .foto-sobremi1{
-        width: 200px;
-        margin: 15px;
+    .foto-sobremi1,
+    .foto-sobremi2 {
+        width: 150px;
         border-radius: $border-radius-base;
+        margin-top: 10px;
     }
 
     .foto-sobremi2{
         width: $font-0;
-        height: 150px;
-        margin: 15px;
-        border-radius: $border-radius-base; 
-        margin-top: 20px;
+        height: 200px;
     }
 
     .texto{
         color: #0f0d00bb;
         font-family: 'Papyrus';
         font-style: italic;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         text-align: center;
         line-height: 1.8;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 }

@@ -32,7 +32,7 @@
     margin-bottom: 20px;
 }
 
-.texto.instagram{
+h3{
     font-size: 18px;
     font-weight: 800;
     color: $color-titulo;
@@ -45,5 +45,5 @@
     @include boton-base;
     background-color: $color-button-seguir;
     margin: auto;
-    width: 20%;
+    width: 50%;
 }
