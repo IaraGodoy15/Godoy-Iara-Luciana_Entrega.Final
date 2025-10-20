@@ -457,21 +457,19 @@ nav {
 /* FORMACIONES */
 .contenedor-anual1 {
   background-color: #dfdbcc;
-  padding: 60px;
   display: grid;
-  grid-template-columns: 415px 415px 415px;
-  grid-template-rows: 550px;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 95%;
   gap: 40px;
   justify-content: center;
 }
 
 .contenedor-anual2 {
   background-color: #dfdbcc;
-  padding: 20px;
   display: grid;
-  grid-template-columns: 410px 410px;
-  grid-template-rows: 550px;
-  gap: 35px;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 95%;
+  gap: 1.5rem;
   justify-content: center;
 }
 
@@ -491,49 +489,44 @@ nav {
 }
 .card-formaciones .formaciones-titulo {
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
   color: #352701;
-  justify-content: center;
   font-family: "Papyrus";
-  margin-top: 0px;
-  margin-bottom: 5px;
 }
 .card-formaciones .descripcion-formacion {
   font-family: "delius";
-  font-size: 15px;
-  font-weight: 200;
+  font-size: 1rem;
+  padding: 1rem;
   line-height: 1.5;
   color: #140c01;
-  text-shadow: 2px 2px 5px rgba(66, 66, 65, 0.6705882353);
-  text-align: center;
-  margin-top: 10px;
 }
 
 .imagen1 {
-  width: 200px;
+  width: 65%;
+  height: auto;
+  max-width: 220px;
   border-radius: 10px;
   margin: auto;
 }
 
 .imagen2,
 .imagen4 {
-  width: 330px;
+  width: 100%;
   border-radius: 10px;
   margin: auto;
 }
 
 .imagen3 {
-  width: 330px;
+  width: 100%;
   border-radius: 10px;
   margin-top: 30px;
   margin-left: 12px;
 }
 
 .imagen5 {
-  width: 330px;
+  width: 100%;
   border-radius: 10px;
   margin-top: 0px;
-  margin-left: 5px;
 }
 
 /* TALLERES Y CURSOS */
